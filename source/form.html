@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="/source/index.html">
+      <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/280x37" alt="Кэт энерджи Интернет-магазин фитнес еды для котиков" width="280" height="37">
       </a>
       <nav class="main-nav">
@@ -15,8 +15,8 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="../source/index.html">Главная</a></li>
-            <li class="site-list__item"><a href="../source/catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
             <li class="site-list__item"><a>Подбор программы</a></li>
           </ul>
         </div>
@@ -28,44 +28,44 @@
       <section class="programm">
         <h2 class="visually-hidden">Анкета</h2>
         <p class="programm__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="programm-form common-form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="programm__form common-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="common-form__fieldset">
             <p class="common-form__wrapper">
               <label class="common-form__label">
                 Имя:*
-                <input class="common-form__input common-form__input--text" type="text" name="cat-name" placeholder="Барсик" required>
+                <input class="common-form__input" type="text" name="cat-name" placeholder="Барсик" required>
               </label>
             </p>
             <p class="common-form__wrapper">
               <label class="common-form__label">
                 Вес (кг.):*
-                <input class="common-form__input common-form__input--number" type="number" name="cat-weight" placeholder="7" required>
+                <input class="common-form__input" type="number" name="cat-weight" placeholder="7" required>
               </label>
             </p>
             <p class="common-form__wrapper">
               <label class="common-form__label">
                 Возраст (лет):
-                <input class="common-form__input common-form__input--number" type="number" name="cat-age" placeholder="7">
+                <input class="common-form__input" type="number" name="cat-age" placeholder="7">
               </label>
             </p>
           </fieldset>
           <fieldset class="common-form__fieldset">
             <ul class="common-form__list">
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--reverse">
-                  <input class="common-form__radio-check common-form__radio-check--radio" type="radio" name="programm-name">
+                <label class="common-form__label common-form__label--radio">
+                  <input class="common-form__radio-check" type="radio" name="programm-name">
                   Похудение
                 </label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--reverse">
-                  <input class="common-form__radio-check common-form__radio-check--radio" type="radio" name="programm-name">
+                <label class="common-form__label common-form__label--radio">
+                  <input class="common-form__radio-check" type="radio" name="programm-name">
                   Набор массы
                 </label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--reverse">
-                  <input class="common-form__radio-check common-form__radio-check--radio" type="radio" name="programm-name">
+                <label class="common-form__label common-form__label--radio">
+                  <input class="common-form__radio-check" type="radio" name="programm-name">
                   Не знаю (нужен ваш совет)
                 </label>
               </li>
@@ -74,29 +74,23 @@
           <fieldset class="common-form__fieldset common-form__fieldset--without-line">
             <div class="title-with-line">
               <h3 class="title-with-line__title">Контактные данные (владельца кота)</h3>
-              <div class="title-with-line__line">
-                <div class="title-with-line__line-inner"></div>
-              </div>
             </div>
             <p class="common-form__wrapper">
               <label class="common-form__label">
                 E-mail:*
-                <input class="common-form__input common-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="common-form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
               </label>
             </p>
             <p class="common-form__wrapper">
               <label class="common-form__label">
                 Телефон:*
-                <input class="common-form__input common-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                <input class="common-form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
               </label>
             </p>
           </fieldset>
           <fieldset class="common-form__fieldset common-form__fieldset--without-line">
             <div class="title-with-line">
               <h3 class="title-with-line__title">Комментарий</h3>
-              <div class="title-with-line__line">
-                <div class="title-with-line__line-inner"></div>
-              </div>
             </div>
             <p class="common-form__wrapper">
               <label class="common-form__label">
@@ -108,38 +102,35 @@
           <fieldset class="common-form__fieldset common-form__fieldset--without-line">
             <div class="title-with-line">
               <h3 class="title-with-line__title">Дополнительно</h3>
-              <div class="title-with-line__line">
-                <div class="title-with-line__line-inner"></div>
-              </div>
             </div>
             <ul class="common-form__list">
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--reverse">
-                  <input class="common-form__radio-check common-form__radio-check--check" type="checkbox" name="sugar-substitute">
+                <label class="common-form__label common-form__label--checkbox">
+                  <input class="common-form__radio-check" type="checkbox" name="sugar-substitute">
                   Cахарозаменитель
                 </label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--reverse">
-                  <input class="common-form__radio-check common-form__radio-check--check" type="checkbox" name="water">
+                <label class="common-form__label common-form__label--checkbox">
+                  <input class="common-form__radio-check" type="checkbox" name="water">
                   Питьевая вода
                 </label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--reverse">
-                  <input class="common-form__radio-check common-form__radio-check--check" type="checkbox" name="milk">
+                <label class="common-form__label common-form__label--checkbox">
+                  <input class="common-form__radio-check" type="checkbox" name="milk">
                   Молоко
                 </label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--reverse">
-                  <input class="common-form__radio-check common-form__radio-check--check" type="checkbox" name="vitamins">
+                <label class="common-form__label common-form__label--checkbox">
+                  <input class="common-form__radio-check" type="checkbox" name="vitamins">
                   Витамины
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Отправить заявку</button>
+          <button class="common-form__button button" type="submit">Отправить заявку</button>
           <small class="common-form__star-info">* — Обязательные поля</small>
         </form>
       </section>
@@ -156,7 +147,7 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="/source/index.html">
+      <a class="page-footer__logo" href="index.html">
         <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Кэт энерджи Интернет-магазин фитнес еды для котиков">
       </a>
       <div class="page-footer__socials socials">
