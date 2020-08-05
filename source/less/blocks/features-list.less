@@ -1,0 +1,137 @@
+//11
+.features-list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.features-list__item {
+  background-color: @basic_grey;
+
+  padding-top: 30px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 33px;
+
+  margin-bottom: 20px;
+}
+
+.features-list__title {
+  position: relative;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  color: @basic_black;
+
+  margin: 0;
+  margin-bottom: 29px;
+
+  padding-left: 71px;
+  padding-right: 5px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top:-7px;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: @basic_green;
+
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+  }
+}
+
+.features-list__title--slim {
+  &::after {
+    top: -10px;
+    left: 7px;
+
+    background-image: url("../../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    width: 36px;
+    height: 50px;
+  }
+}
+
+.features-list__title--gain {
+  &::after {
+    top: 5px;
+    left: -9px;
+
+    background-image: url("../../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    width: 67px;
+    height: 28px;
+  }
+}
+
+.features-list__description {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: @special_dark-grey;
+
+  margin: 0;
+  margin-bottom: 15px;
+
+  padding: 0;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid @list_line;
+}
+
+.features-list__link {
+  position: relative;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: @basic_black;
+
+  padding-right: 57px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    right: 0;
+
+    width: 32px;
+    height: 10px;
+
+    background-image: url(../../img/icon-right-arrow-long.svg);
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-image: url(../../img/icon-right-arrow-verylong.svg);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

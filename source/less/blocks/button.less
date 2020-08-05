@@ -1,0 +1,23 @@
+.button {
+  display: block;
+
+  padding: 7px;
+
+  background-color: @basic_green;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @basic_white;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    background-color: @basic_green-2;
+  }
+
+  &:active {
+    color: fade(@basic_white, 30%);
+  }
+}
