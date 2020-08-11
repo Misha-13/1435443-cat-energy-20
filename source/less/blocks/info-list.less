@@ -6,12 +6,9 @@
 
   width: 100%;
 
-  list-style: none;
+  .clear-lists-style();
 
-  margin: 0;
   margin-bottom: 42px;
-
-  padding: 0;
 }
 
 .info-list__item {
@@ -43,33 +40,30 @@
     height: 60px;
 
     background-color: @basic_green;
+    background-position: center center;
   }
 }
 
 .info-list__description--leaf {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-position: center center;
   }
 }
 
 .info-list__description--powder {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
-    background-position: center center;
   }
 }
 
 .info-list__description--eat {
   &::before {
     background-image: url("../img/advantage-dining@1x.png");
-    background-position: center center;
   }
 }
 
 .info-list__description--clock {
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
-    background-position: center center;
   }
 }

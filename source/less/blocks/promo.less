@@ -1,25 +1,23 @@
 .promo {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @deafult-font;
   font-style: normal;
   font-weight: normal;
 
-  margin-bottom: 27px;
+  margin-bottom: 23px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .promo__header {
   box-sizing: border-box;
 
-  min-height: 305px;
-
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
   padding-top: 27px;
-  padding-bottom: 130px;
   padding-left: 36px;
   padding-right: 35px;
+
+  margin-bottom: 29px;
 }
 
 .promo__title {
@@ -32,7 +30,7 @@
 
   text-align: center;
 
-  color: @basic_white;
+  color: @white;
 }
 
 .promo__slogan {
@@ -40,31 +38,19 @@
   line-height: 14px;
 
   margin: 0;
-  margin-bottom: 5px;
 
   text-align: center;
 
   text-transform: uppercase;
 
-  color: @basic_white;
+  color: @white;
 }
 
 .promo__image-container {
-  position: relative;
-  top: -135px;
-
-  margin-bottom: -135px;
-
   text-align: center;
 }
 
 .promo__find {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 23px;
-}
-
-.promo__list {
   margin-left: 20px;
   margin-right: 20px;
 }
