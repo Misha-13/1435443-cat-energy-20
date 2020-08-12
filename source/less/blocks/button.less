@@ -1,0 +1,38 @@
+.button {
+  display: block;
+
+  padding: 7px;
+
+  background-color: @basic_green;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @white;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    background-color: @basic_green-2;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+}
+
+.button--colorless {
+  background-color: @basic_grey;
+
+  color: @special_dark-grey;
+
+  &:hover,
+  &:active {
+    background-color: @special_grey-2;
+  }
+
+  &:active {
+    color: fade(@special_dark-grey, 30%);
+  }
+}

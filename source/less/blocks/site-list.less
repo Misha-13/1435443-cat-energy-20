@@ -1,0 +1,27 @@
+.site-list {
+  .clear-lists-style();
+}
+
+.site-list__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  border-top: 1px solid @gray--dark;
+
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: @black;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+}
