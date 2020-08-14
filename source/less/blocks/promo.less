@@ -1,21 +1,53 @@
 .promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-family: @default-font;
   font-style: normal;
   font-weight: normal;
+
+  padding-left: 20px;
+  padding-right: 20px;
 
   margin-bottom: 23px;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 103px;
+    padding-right: 30px;
+
+    align-items: flex-start;
+
+    background-image: none;
+
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 190px;
+    padding-right: 110px;
+
+    margin-top: -370px;
+
+    width: 890px;
+    height: 400px;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 .promo__header {
   box-sizing: border-box;
 
   padding-top: 27px;
-  padding-left: 36px;
-  padding-right: 35px;
+  /* padding-left: 36px;
+  padding-right: 35px; */
 
   margin-bottom: 29px;
 }
@@ -31,6 +63,18 @@
   text-align: center;
 
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    /* width: 60%; */
+    width: 420px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    color: @black;
+
+    text-align: left;
+  }
 }
 
 .promo__slogan {
@@ -44,13 +88,49 @@
   text-transform: uppercase;
 
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    color: @black;
+
+    text-align: left;
+  }
 }
 
 .promo__image-container {
-  text-align: center;
+  /* text-align: center; */
+  @media (min-width: @tablet-width) {
+    order: 2;
+
+    z-index: -1;
+
+    align-self: center;
+
+    margin-top: -45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 0;
+
+    margin-left: -225px;
+
+    align-self: flex-start;
+  }
 }
 
 .promo__find {
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  align-self: stretch;
+
+  @media (min-width: @tablet-width) {
+    align-self: inherit;
+
+    padding-left: 26px;
+    padding-right: 26px;
+  }
 }

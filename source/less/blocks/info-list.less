@@ -9,13 +9,26 @@
   .clear-lists-style();
 
   margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 .info-list__item {
   position: relative;
 
-  width: 100%;
   min-height: 60px;
+
+  width: 250px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .info-list__description {

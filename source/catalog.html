@@ -17,7 +17,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a>Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a>Каталог продукции</a></li>
             <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
           </ul>
         </div>
@@ -191,17 +191,19 @@
               <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
             </article>
           </li>
+          <li class="goods-list__item">
+            <div class="additional-items">
+              <button class="additional-items__button" aria-label="показать больше товаров" type="button">
+                <svg viewBox="0 0 30 30" width="30" height="30">
+                  <polygon fill="currentColor" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
+                </svg>
+              </button>
+              <p class="additional-items__show">Показать еще 100500 товаров</p>
+              <p class="additional-items__info">На самом деле вкусов гораздо больше!</p>
+              <a class="additional-items__show-all button button--colorless" href="blank.html">Показать все</a>
+            </div>
+          </li>
         </ul>
-        <div class="common-catalog-item__add additional-items">
-          <button class="additional-items__button" aria-label="показать больше товаров" type="button">
-            <svg viewBox="0 0 30 30" width="30" height="30">
-              <polygon fill="currentColor" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
-            </svg>
-          </button>
-          <p class="additional-items__show">Показать еще 100500 товаров</p>
-          <p class="additional-items__info">На самом деле вкусов гораздо больше!</p>
-          <a class="additional-items__show-all button button--colorless" href="blank.html">Показать все</a>
-        </div>
       </section>
 
       <section class="extra-goods">

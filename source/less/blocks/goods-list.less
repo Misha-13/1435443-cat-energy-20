@@ -1,5 +1,24 @@
 .goods-list {
   .clear-lists-style();
+
+  display: grid;
+  flex-direction: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: auto auto;
+    grid-gap: 60px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 80px;
+
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .goods-list__item {
@@ -10,4 +29,18 @@
   padding-right: 20px;
 
   border-bottom: 1px solid @special_grey-2;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
