@@ -31,51 +31,53 @@
 
   @media (min-width: @tablet-width) {
     min-height: 280px;
-  }
 
-  &::after {
-    content: "";
+    &::after {
+      content: "";
 
-    position: absolute;
+      position: absolute;
 
-    top: 0;
-    right: 25px;
+      top: 0;
+      right: 25px;
 
-    font-family: @default-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 280px;
-    line-height: 280px;
+      font-family: @default-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
 
-    color: @basic_grey;
+      color: @basic_grey;
 
-    z-index: -1;
-  }
-}
-
-.info-list__item--counter-1 {
-  &::after {
-    content: "1";
-
-    right: 40px;
+      z-index: -1;
+    }
   }
 }
 
-.info-list__item--counter-2 {
-  &::after {
-    content: "2";
-  }
-}
+@media (min-width: @tablet-width) {
+  .info-list__item--counter-1 {
+    &::after {
+      content: "1";
 
-.info-list__item--counter-3 {
-  &::after {
-    content: "3";
+      right: 40px;
+    }
   }
-}
 
-.info-list__item--counter-4 {
-  &::after {
-    content: "4";
+  .info-list__item--counter-2 {
+    &::after {
+      content: "2";
+    }
+  }
+
+  .info-list__item--counter-3 {
+    &::after {
+      content: "3";
+    }
+  }
+
+  .info-list__item--counter-4 {
+    &::after {
+      content: "4";
+    }
   }
 }
 
