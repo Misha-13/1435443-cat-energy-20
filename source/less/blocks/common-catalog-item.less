@@ -147,18 +147,20 @@
 .common-catalog-item__image {
   order: -1;
 
-  width: 140px;
+  width: 130px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-
-    top: -200px;
-
     align-self: center;
+
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
   }
 }
 

@@ -10,6 +10,8 @@
 
   margin-bottom: 42px;
 
+  counter-reset: section;
+
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 150px;
@@ -33,12 +35,13 @@
     min-height: 280px;
 
     &::after {
-      content: "";
+      counter-increment: section;
+      content: counter(section);
 
       position: absolute;
 
       top: 0;
-      right: 25px;
+      left: 43%;
 
       font-family: @default-font;
       font-style: normal;
@@ -49,34 +52,6 @@
       color: @basic_grey;
 
       z-index: -1;
-    }
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .info-list__item--counter-1 {
-    &::after {
-      content: "1";
-
-      right: 40px;
-    }
-  }
-
-  .info-list__item--counter-2 {
-    &::after {
-      content: "2";
-    }
-  }
-
-  .info-list__item--counter-3 {
-    &::after {
-      content: "3";
-    }
-  }
-
-  .info-list__item--counter-4 {
-    &::after {
-      content: "4";
     }
   }
 }
@@ -121,48 +96,30 @@
 
     background-color: @basic_green;
     background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 
 .info-list__description--leaf {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-repeat: no-repeat;
   }
 }
 
 .info-list__description--powder {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
-    background-repeat: no-repeat;
   }
 }
 
 .info-list__description--eat {
   &::before {
     background-image: url("../img/advantage-dining@1x.png");
-    background-repeat: no-repeat;
   }
 }
 
 .info-list__description--clock {
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
-    background-repeat: no-repeat;
   }
 }
-
-/* .info-list__counter {
-  position: absolute;
-
-  top: 0;
-  right: 25px;
-
-  font-family: @default-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 280px;
-  line-height: 280px;
-
-  color: @basic_grey;
-} */

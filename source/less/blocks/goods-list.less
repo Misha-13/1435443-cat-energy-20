@@ -7,16 +7,14 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
 
-    padding-left: 30px;
-    padding-right: 30px;
+    .set-left-right-padding();
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 80px;
 
-    padding-left: 110px;
-    padding-right: 110px;
+    .set-left-right-padding();
   }
 }
 
@@ -31,27 +29,43 @@
 
   @media (min-width: @tablet-width) {
     /* width: 324px; */
+    outline: 2px dashed red; /*временная обводка*/
+
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     padding-left: 38px;
     padding-right: 38px;
-    padding-top: 160px;
+    padding-top: 5px;
     padding-bottom: 40px;
 
-    margin-bottom: 140px;
+    /* margin-bottom: 140px; */
 
-    min-height: 430px;
+    min-height: 510px;
 
-    background-color: @basic_grey;
+    /* background-color: @basic_grey; */
+    background: linear-gradient(transparent 15%, @basic_grey 15%);
   }
 }
 
 .goods-list__item--add {
   @media (min-width: @tablet-width) {
+    justify-content: space-between;
+
+    background: transparent;
     background-color: @white;
 
-    border: 1px solid @special_grey-2;
+    /* border: 1px solid @special_grey-2; */
 
-    padding: 38px;
+    padding-left: 0;
+    padding-right: 0;
+
+    padding-top: 80px;
+    padding-bottom: 0;
+
+    outline: none; /* врменно - пока есть обводка */
   }
 }

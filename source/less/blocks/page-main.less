@@ -11,8 +11,7 @@
   margin-bottom: 8px;
 
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  .set-left-right-padding();
   padding-top: 27px;
   padding-bottom: 41px;
 
@@ -24,15 +23,13 @@
 
     margin-bottom: 165px;
 
-    padding-left: 30px;
-    padding-right: 30px;
+    .set-left-right-padding();
 
     border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    .set-left-right-padding();
   }
 }
 

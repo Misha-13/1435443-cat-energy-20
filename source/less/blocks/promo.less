@@ -7,8 +7,7 @@
   font-style: normal;
   font-weight: normal;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  .set-left-right-padding();
 
   margin-bottom: 23px;
 
@@ -18,7 +17,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 103px;
-    padding-right: 30px;
+    padding-right: 103px;
 
     align-items: flex-start;
 
@@ -29,12 +28,11 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 190px;
-    padding-right: 110px;
+    padding-right: 190px;
 
-    margin-top: -370px;
+    margin-bottom: 80px;
 
-    width: 890px;
-    height: 400px;
+    min-height: 555px;
 
     flex-wrap: wrap;
     align-items: flex-start;
@@ -45,9 +43,9 @@
 .promo__header {
   box-sizing: border-box;
 
+  position: relative;
+
   padding-top: 27px;
-  /* padding-left: 36px;
-  padding-right: 35px; */
 
   margin-bottom: 29px;
 }
@@ -114,17 +112,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    z-index: 0;
+    position: absolute;
 
-    margin-left: -225px;
-
-    align-self: flex-start;
+    margin-top: 0;
   }
 }
 
 .promo__find {
-  /* margin-left: 20px;
-  margin-right: 20px; */
   align-self: stretch;
 
   @media (min-width: @tablet-width) {
