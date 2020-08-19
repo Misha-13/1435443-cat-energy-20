@@ -18,7 +18,7 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a>Подбор программы</a></li>
+            <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -32,43 +32,31 @@
         <form class="programm__form common-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="common-form__fieldset common-form__fieldset--bordered">
             <p class="common-form__wrapper">
-              <label class="common-form__label">
-                Имя:*
-                <input class="common-form__input" type="text" name="cat-name" placeholder="Барсик" required>
-              </label>
+              <label class="common-form__label" for="input_name">Имя:*</label>
+              <input class="common-form__input" type="text" name="cat-name" placeholder="Барсик" id="input_name" autocomplete="off" required>
             </p>
             <p class="common-form__wrapper">
-              <label class="common-form__label">
-                Вес (кг.):*
-                <input class="common-form__input" type="number" name="cat-weight" placeholder="7" required>
-              </label>
+              <label class="common-form__label" for="input_weight">Вес (кг.):*</label>
+              <input class="common-form__input" type="number" name="cat-weight" placeholder="7" id="input_weight" autocomplete="off" required>
             </p>
             <p class="common-form__wrapper">
-              <label class="common-form__label">
-                Возраст (лет):
-                <input class="common-form__input" type="number" name="cat-age" placeholder="7">
-              </label>
+              <label class="common-form__label" for="input_age">Возраст (лет):</label>
+              <input class="common-form__input" type="number" name="cat-age" placeholder="7" autocomplete="off" id="input_age">
             </p>
           </fieldset>
           <fieldset class="common-form__fieldset common-form__fieldset--bordered">
             <ul class="common-form__list">
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--radio">
-                  <input class="common-form__radio-check" type="radio" name="programm-name">
-                  Похудение
-                </label>
+                <input class="common-form__radio-check" type="radio" name="programm-name" value="slim" id="input_radio1" checked>
+                <label class="common-form__label common-form__label--radio" for="input_radio1">Похудение</label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--radio">
-                  <input class="common-form__radio-check" type="radio" name="programm-name">
-                  Набор массы
-                </label>
+                <input class="common-form__radio-check" type="radio" name="programm-name" value="gain" id="input_radio2">
+                <label class="common-form__label common-form__label--radio" for="input_radio2">Набор массы</label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--radio">
-                  <input class="common-form__radio-check" type="radio" name="programm-name">
-                  Не знаю (нужен ваш совет)
-                </label>
+                <input class="common-form__radio-check" type="radio" name="programm-name" value="advice" id="input_radio3">
+                <label class="common-form__label common-form__label--radio" for="input_radio3">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -77,16 +65,12 @@
               <h3 class="common-form__title title-with-line__title">Контактные данные (владельца кота)</h3>
             </div>
             <p class="common-form__wrapper">
-              <label class="common-form__label">
-                E-mail:*
-                <input class="common-form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              </label>
+              <label class="common-form__label" for="input_email">E-mail:*</label>
+              <input class="common-form__input common-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="input_email" autocomplete="off" required>
             </p>
             <p class="common-form__wrapper">
-              <label class="common-form__label">
-                Телефон:*
-                <input class="common-form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-              </label>
+              <label class="common-form__label" for="input_tel">Телефон:*</label>
+              <input class="common-form__input common-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" id="input_tel" autocomplete="off" required>
             </p>
           </fieldset>
           <fieldset class="common-form__fieldset">
@@ -94,10 +78,8 @@
               <h3 class="title-with-line__title">Комментарий</h3>
             </div>
             <p class="common-form__wrapper">
-              <label class="common-form__label">
-                <span class="visually-hidden">Текст комментария</span>
-                <textarea class="common-form__textarea" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </label>
+              <label class="visually-hidden" for="input_comment">Текст комментария</label>
+              <textarea class="common-form__textarea" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота" id="input_comment"></textarea>
             </p>
           </fieldset>
           <fieldset class="common-form__fieldset">
@@ -106,28 +88,20 @@
             </div>
             <ul class="common-form__list">
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--checkbox">
-                  <input class="common-form__radio-check" type="checkbox" name="sugar-substitute">
-                  Cахарозаменитель
-                </label>
+                <input class="common-form__radio-check" type="checkbox" name="sugar-substitute" id="input_check1" checked>
+                <label class="common-form__label common-form__label--checkbox" for="input_check1">Cахарозаменитель</label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--checkbox">
-                  <input class="common-form__radio-check" type="checkbox" name="water">
-                  Питьевая вода
-                </label>
+                <input class="common-form__radio-check" type="checkbox" name="water" id="input_check2">
+                <label class="common-form__label common-form__label--checkbox" for="input_check2">Питьевая вода</label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--checkbox">
-                  <input class="common-form__radio-check" type="checkbox" name="milk">
-                  Молоко
-                </label>
+                <input class="common-form__radio-check" type="checkbox" name="milk" id="input_check3">
+                <label class="common-form__label common-form__label--checkbox" for="input_check3">Молоко</label>
               </li>
               <li class="common-form__item">
-                <label class="common-form__label common-form__label--checkbox">
-                  <input class="common-form__radio-check" type="checkbox" name="vitamins">
-                  Витамины
-                </label>
+                <input class="common-form__radio-check" type="checkbox" name="vitamins" id="input_check4">
+                <label class="common-form__label common-form__label--checkbox" for="input_check4">Витамины</label>
               </li>
             </ul>
           </fieldset>
