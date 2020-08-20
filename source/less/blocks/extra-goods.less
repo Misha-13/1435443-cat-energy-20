@@ -2,6 +2,8 @@
   font-family: @default-font;
   font-style: normal;
   font-weight: normal;
+
+  margin-bottom: 76px;
 }
 
 .extra-goods__title {
@@ -12,4 +14,58 @@
 
 .extra-goods__list li:first-child {
   border-top: 1px solid @special_grey;
+}
+
+.extra-goods__bonus {
+  font-family: @alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: @white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  min-height: 289px;
+
+  box-sizing: border-box;
+
+  margin-top: 39px;
+
+  .set-left-right-padding();
+  padding-top: 58px;
+  padding-bottom: 43px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+
+    min-height: 200px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+}
+
+.extra-goods__special-description {
+  width: 165px;
+
+  text-align: center;
+
+  margin: 0;
+  margin-top: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: 265px;
+
+    text-align: left;
+  }
 }
