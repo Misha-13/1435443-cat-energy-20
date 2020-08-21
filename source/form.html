@@ -31,63 +31,76 @@
         <h2 class="visually-hidden">Анкета</h2>
         <p class="programm__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="programm__form common-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="common-form__fieldset common-form__fieldset--bordered">
-            <p class="common-form__wrapper">
-              <label class="common-form__label" for="input_name">Имя:*</label>
-              <input class="common-form__input" type="text" name="cat-name" placeholder="Барсик" id="input_name" autocomplete="off" required>
-            </p>
-            <p class="common-form__wrapper">
-              <label class="common-form__label" for="input_weight">Вес (кг.):*</label>
-              <input class="common-form__input" type="number" name="cat-weight" placeholder="7" id="input_weight" autocomplete="off" required>
-            </p>
-            <p class="common-form__wrapper">
-              <label class="common-form__label" for="input_age">Возраст (лет):</label>
-              <input class="common-form__input" type="number" name="cat-age" placeholder="7" autocomplete="off" id="input_age">
-            </p>
-          </fieldset>
-          <fieldset class="common-form__fieldset common-form__fieldset--bordered">
-            <ul class="common-form__list">
-              <li class="common-form__item">
-                <input class="common-form__radio-check" type="radio" name="programm-name" value="slim" id="input_radio1" checked>
-                <label class="common-form__label common-form__label--radio" for="input_radio1">Похудение</label>
-              </li>
-              <li class="common-form__item">
-                <input class="common-form__radio-check" type="radio" name="programm-name" value="gain" id="input_radio2">
-                <label class="common-form__label common-form__label--radio" for="input_radio2">Набор массы</label>
-              </li>
-              <li class="common-form__item">
-                <input class="common-form__radio-check" type="radio" name="programm-name" value="advice" id="input_radio3">
-                <label class="common-form__label common-form__label--radio" for="input_radio3">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="common-form__main-info">
+            <fieldset class="common-form__fieldset">
+              <p class="common-form__wrapper">
+                <label class="common-form__label" for="input_name">Имя:*</label>
+                <input class="common-form__input" type="text" name="cat-name" placeholder="Барсик" id="input_name" autocomplete="off" required>
+              </p>
+              <p class="common-form__wrapper">
+                <label class="common-form__label" for="input_weight">Вес (кг.):*</label>
+                <input class="common-form__input" type="number" name="cat-weight" placeholder="7" id="input_weight" autocomplete="off" required>
+              </p>
+              <p class="common-form__wrapper">
+                <label class="common-form__label" for="input_age">Возраст (лет):</label>
+                <input class="common-form__input" type="number" name="cat-age" placeholder="7" autocomplete="off" id="input_age">
+              </p>
+            </fieldset>
+            <fieldset class="common-form__fieldset">
+              <ul class="common-form__list">
+                <li class="common-form__item">
+                  <input class="common-form__radio-check" type="radio" name="programm-name" value="slim" id="input_radio1" checked>
+                  <label class="common-form__label common-form__label--radio" for="input_radio1">Похудение</label>
+                </li>
+                <li class="common-form__item">
+                  <input class="common-form__radio-check" type="radio" name="programm-name" value="gain" id="input_radio2">
+                  <label class="common-form__label common-form__label--radio" for="input_radio2">Набор массы</label>
+                </li>
+                <li class="common-form__item">
+                  <input class="common-form__radio-check" type="radio" name="programm-name" value="advice" id="input_radio3">
+                  <label class="common-form__label common-form__label--radio" for="input_radio3">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="title-with-line">
+            <h3 class="common-form__title title-with-line__title">Контактные данные (владельца кота)</h3>
+          </div>
           <fieldset class="common-form__fieldset">
-            <div class="title-with-line">
+            <!-- <div class="title-with-line">
               <h3 class="common-form__title title-with-line__title">Контактные данные (владельца кота)</h3>
+            </div> -->
+            <div class="common-form__flex-fieldset">
+              <p class="common-form__wrapper">
+                <label class="common-form__label" for="input_email">E-mail:*</label>
+                <input class="common-form__input common-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="input_email" autocomplete="off" required>
+              </p>
+              <p class="common-form__wrapper">
+                <label class="common-form__label" for="input_tel">Телефон:*</label>
+                <input class="common-form__input common-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" id="input_tel" autocomplete="off" required>
+              </p>
             </div>
-            <p class="common-form__wrapper">
-              <label class="common-form__label" for="input_email">E-mail:*</label>
-              <input class="common-form__input common-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="input_email" autocomplete="off" required>
-            </p>
-            <p class="common-form__wrapper">
-              <label class="common-form__label" for="input_tel">Телефон:*</label>
-              <input class="common-form__input common-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" id="input_tel" autocomplete="off" required>
-            </p>
           </fieldset>
+          <div class="title-with-line">
+            <h3 class="title-with-line__title">Комментарий</h3>
+          </div>
           <fieldset class="common-form__fieldset">
-            <div class="title-with-line">
+            <!-- <div class="title-with-line">
               <h3 class="title-with-line__title">Комментарий</h3>
-            </div>
+            </div> -->
             <p class="common-form__wrapper">
               <label class="visually-hidden" for="input_comment">Текст комментария</label>
               <textarea class="common-form__textarea" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота" id="input_comment"></textarea>
             </p>
           </fieldset>
+          <div class="title-with-line">
+            <h3 class="title-with-line__title">Дополнительно</h3>
+          </div>
           <fieldset class="common-form__fieldset">
-            <div class="title-with-line">
+            <!-- <div class="title-with-line">
               <h3 class="title-with-line__title">Дополнительно</h3>
-            </div>
-            <ul class="common-form__list">
+            </div> -->
+            <ul class="common-form__list common-form__list--extra">
               <li class="common-form__item">
                 <input class="common-form__radio-check" type="checkbox" name="sugar-substitute" id="input_check1" checked>
                 <label class="common-form__label common-form__label--checkbox" for="input_check1">Cахарозаменитель</label>

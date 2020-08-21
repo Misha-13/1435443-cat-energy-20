@@ -2,6 +2,10 @@
   .clear-lists-style();
 
   .set-left-right-padding();
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .goods-list-add__item {
@@ -9,4 +13,23 @@
   padding-bottom: 19px;
 
   border-bottom: 1px solid @special_grey-2;
+
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid @special_grey-2;
+    border-right: 1px solid @special_grey-2;
+
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-left: none;
+    border-right: none;
+
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }

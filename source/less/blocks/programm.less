@@ -15,11 +15,21 @@
 
   color: @black;
 
-  padding-left: 20px;
-  padding-right: 74px;
+  .set-left-right-padding();
+
+  width: 245px;
 
   margin: 0;
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .set-left-right-padding();
+  }
 }
 
 .programm__form-title {
