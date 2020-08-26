@@ -7,14 +7,33 @@
 
   color: @special_dark-grey;
 
-  display: flex;
+  background-color: @basic_grey;
+
+  /* display: flex;
   flex-direction: column;
 
   .set-left-right-padding();
 
   text-align: center;
 
-  background-color: @basic_grey;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+}
+
+.page-footer-wrapper {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  .set-left-right-padding();
+
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
