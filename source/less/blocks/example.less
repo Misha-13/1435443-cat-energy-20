@@ -5,14 +5,68 @@
   font-size: 14px;
   line-height: 18px;
 
+  /* position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; */
+
   color: @special_dark-grey;
 
   background-color: @grey--light;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  /* .set-left-right-padding();
+  padding-top: 27px;
+  padding-bottom: 25px; */
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(@white 60%, @grey--light 60%);
+
+    border-top: 1px solid @grey;
+
+    /* flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between; */
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(@white 30%, @grey--light 30%);
+
+    border-top: none;
+
+    /* flex-direction: column;
+    align-items: flex-start; */
+  }
+}
+
+.example__wrapper {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .set-left-right-padding();
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .example__title {
@@ -26,6 +80,19 @@
 
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+
+    margin-bottom: 146px;
+  }
 }
 
 .example__info {
@@ -41,6 +108,19 @@
   margin-bottom: 25px;
 
   padding-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 440px;
+
+    margin-bottom: 69px;
+  }
 }
 
 .example__extra {
@@ -57,8 +137,47 @@
 
   margin: 0;
   margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+
+    text-align: right;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 440px;
+
+    text-align: left;
+
+    margin-bottom: 75px;
+    margin-top: 35px;
+  }
+}
+
+.example__list {
+  @media (min-width: @tablet-width) {
+    width: 370px;
+  }
 }
 
 .example__difference {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+
+    align-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+
+    position: absolute;
+
+    bottom: 95px;
+    right: 100px;
+  }
 }

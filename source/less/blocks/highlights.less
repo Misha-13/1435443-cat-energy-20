@@ -6,6 +6,10 @@
   width: 124px;
 
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
 }
 
 .highlights__main-text {
@@ -30,6 +34,11 @@
 
   border: 1px solid @special_grey;
   border-radius: 3%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .highlights__extra-text {
@@ -47,4 +56,20 @@
   background-color: @grey--light;
 
   width: 80px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: @white;
+
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: @grey--light;
+  }
 }
