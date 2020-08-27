@@ -13,17 +13,18 @@
 }
 
 .copyright__link {
-  display: block;
+  /* display: block; */
 
   color: @special_dark-grey;
 
   text-decoration: none;
 
-  &:hover + .copyright__logo {
+  &:hover .copyright__logo {
     fill: @basic_green;
   }
 
-  &:active + .copyright__logo {
+  &:active .copyright__logo,
+  &:active .copyright__text {
     opacity: 0.3;
   }
 }

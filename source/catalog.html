@@ -9,20 +9,20 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header-wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img src="https://via.placeholder.com/280x37" alt="Кэт энерджи Интернет-магазин фитнес еды для котиков" width="280" height="37">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+        <div class="page-header-logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img src="img/logo-mobile.svg" alt="Кэт энерджи Интернет-магазин фитнес еды для котиков" width="191" height="38">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Кнопка меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a href="index.html">Главная</a></li>
-              <li class="site-list__item site-list__item--active"><a>Каталог продукции</a></li>
-              <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-            </ul>
-          </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a>Каталог продукции</a></li>
+            <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -52,7 +52,7 @@
                   </div>
                 </div>
                 <div class="common-catalog-item__image common-catalog-item__image--small">
-                  <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Кэт Энерджи Про (куринный, 500 грамм)">
+                  <img src="img/chicken-small-mobile@1x.jpg" width="68" height="86" alt="Кэт Энерджи Про (куринный, 500 грамм)">
                 </div>
                 <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
               </article>
@@ -75,7 +75,7 @@
                   </div>
                 </div>
                 <div class="common-catalog-item__image common-catalog-item__image--big">
-                  <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Кэт Энерджи Про (куринный, 1000 грамм)">
+                  <img src="img/chicken-big-mobile@1x.jpg" width="84" height="101" alt="Кэт Энерджи Про (куринный, 1000 грамм)">
                 </div>
                 <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
               </article>
@@ -98,7 +98,7 @@
                   </div>
                 </div>
                 <div class="common-catalog-item__image common-catalog-item__image--small">
-                  <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Кэт Энерджи Про (рыбный, 500 грамм)">
+                  <img src="img/fish-small-mobile@1x.jpg" width="68" height="86" alt="Кэт Энерджи Про (рыбный, 500 грамм)">
                 </div>
                 <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
               </article>
@@ -121,7 +121,7 @@
                   </div>
                 </div>
                 <div class="common-catalog-item__image common-catalog-item__image--big">
-                  <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Кэт Энерджи Про (рыбный, 1000 грамм)">
+                  <img src="img/fish-big-mobile@1x.jpg" width="84" height="101" alt="Кэт Энерджи Про (рыбный, 1000 грамм)">
                 </div>
                 <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
               </article>
@@ -144,7 +144,7 @@
                   </div>
                 </div>
                 <div class="common-catalog-item__image common-catalog-item__image--small">
-                  <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Кэт Энерджи Слим (гречка, 500 грамм)">
+                  <img src="img/buckwheat-small-mobile@1x.jpg" width="68" height="86" alt="Кэт Энерджи Слим (гречка, 500 грамм)">
                 </div>
                 <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
               </article>
@@ -167,7 +167,7 @@
                   </div>
                 </div>
                 <div class="common-catalog-item__image common-catalog-item__image--big">
-                  <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Кэт Энерджи Слим (гречка, 1000 грамм)">
+                  <img src="img/buckwheat-big-mobile@1x.jpg" width="84" height="101" alt="Кэт Энерджи Слим (гречка, 1000 грамм)">
                 </div>
                 <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
               </article>
@@ -190,7 +190,7 @@
                   </div>
                 </div>
                 <div class="common-catalog-item__image common-catalog-item__image--small">
-                  <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Кэт Энерджи Слим (рис, 500 грамм)">
+                  <img src="img/rice-small-mobile@1x.jpg" width="68" height="86" alt="Кэт Энерджи Слим (рис, 500 грамм)">
                 </div>
                 <a class="common-catalog-item__link button" href="blank.html">Заказать</a>
               </article>
@@ -320,11 +320,13 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright">
+          <a class="copyright__link copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__logo" viewBox="0 0 60 60"  width="34" height="34">
             <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>
+        </a>
         </div>
       </div>
     </footer>
