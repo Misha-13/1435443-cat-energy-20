@@ -57,7 +57,9 @@
 
 .page-header-wrapper {
   box-sizing: border-box;
+
   max-width: 1440px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -110,10 +112,31 @@
   @media (min-width: @tablet-width) {
     justify-content: center;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__toggle {
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.page-header-logo-wrapper {
+  display: flex;
+
+  @media (max-width: @mobile-width-only) {
+    justify-content: space-between;
+
+    .set-left-right-padding();
+
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }

@@ -143,7 +143,15 @@
 }
 
 .promo__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* text-align: center; */
+  width: 280px;
+  height: 270px;
+
+  object-fit: cover;
+
   @media (min-width: @tablet-width) {
     order: 2;
 
@@ -152,13 +160,23 @@
     align-self: center;
 
     margin-top: -45px;
+
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
 
     margin-top: 0;
+
+    width: 552px;
+    height: 499px;
   }
+}
+
+.promo__img {
+  width: 100%;
 }
 
 .promo__find {
