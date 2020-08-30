@@ -2,14 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c163d4c6-a051-4256-bb02-8fedb6aef465&lang=ru_RU" type="text/javascript"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header-wrapper">
-        <div class="page-header-logo-wrapper">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
             <img src="img/logo-mobile.svg" alt="Кэт энерджи Интернет-магазин фитнес еды для котиков" width="191" height="38">
           </a>
@@ -67,22 +68,30 @@
               </fieldset>
             </div>
             <fieldset class="common-form__fieldset">
-              <div class="title-with-line">
+              <div class="title-with-line title-with-line--tablet-form">
                 <h3 class="common-form__title title-with-line__title">Контактные данные (владельца кота)</h3>
               </div>
               <div class="common-form__flex-fieldset">
                 <p class="common-form__wrapper">
                   <label class="common-form__label" for="input_email">E-mail:*</label>
                   <input class="common-form__input common-form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="input_email" autocomplete="off" required>
+                  <svg class="common-form__input-icon" viewBox="0 0 17 13">
+                    <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+                  </svg>
                 </p>
                 <p class="common-form__wrapper">
                   <label class="common-form__label" for="input_tel">Телефон:*</label>
                   <input class="common-form__input common-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" id="input_tel" autocomplete="off" required>
+                  <svg class="common-form__input-icon" viewBox="0 0 20 20">
+                    <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                    <path
+                      d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4C7.8,20,8.1,19.7,8.1,19.4z"/>
+                  </svg>
                 </p>
               </div>
             </fieldset>
             <fieldset class="common-form__fieldset">
-              <div class="title-with-line">
+              <div class="title-with-line title-with-line--tablet-form">
                 <h3 class="title-with-line__title">Комментарий</h3>
               </div>
               <p class="common-form__wrapper">
@@ -91,7 +100,7 @@
               </p>
             </fieldset>
             <fieldset class="common-form__fieldset">
-              <div class="title-with-line">
+              <div class="title-with-line title-with-line--tablet-form">
                 <h3 class="title-with-line__title">Дополнительно</h3>
               </div>
               <ul class="common-form__list common-form__list--extra">

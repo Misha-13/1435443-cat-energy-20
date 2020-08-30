@@ -2,7 +2,7 @@
   .clear-lists-style();
 
   margin: 0;
-  margin-bottom: 23px;
+  /* margin-bottom: 5px; */
 }
 
 .slider__toggles {
@@ -13,6 +13,16 @@
 
 .slider__item {
   display: none;
+  height: 232px;
+
+  @media (min-width: @tablet-width) {
+    height: 536px;
+  }
+
+  & img {
+    width: 100%;
+    max-height: 100%;
+  }
 }
 
 .slider__item--current {
@@ -138,4 +148,9 @@
 
 .slider__toggle-in--after {
   right: 6px;
+
+  @media (min-width: @tablet-width) {
+    top: -16px;
+    right: -13px;
+  }
 }

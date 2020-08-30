@@ -13,6 +13,15 @@
   margin-right: auto;
 
   .set-left-right-padding();
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .set-left-right-padding();
+  }
 }
 
 .programm__info {
