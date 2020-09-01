@@ -2,22 +2,23 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c163d4c6-a051-4256-bb02-8fedb6aef465&lang=ru_RU" type="text/javascript"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="page-header page-header--index">
-      <div class="page-header-wrapper page-header-wrapper--index">
-        <div class="page-header-logo-wrapper">
+      <div class="page-header__wrapper page-header__wrapper--index">
+        <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
             <img src="img/logo-mobile.svg" alt="Кэт энерджи Интернет-магазин фитнес еды для котиков" width="191" height="38">
           </a>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
             <span class="visually-hidden">Кнопка меню</span>
           </button>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav no-js-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--index site-list__item--active-index"><a>Главная</a></li>
             <li class="site-list__item site-list__item--index"><a href="catalog.html">Каталог продукции</a></li>
@@ -102,21 +103,21 @@
           <p class="example__extra">Затраты на питание: 15 000 руб.</p>
           <div class="example__difference slider">
             <ul class="example__difference-list slider__list">
-              <li class="example__difference-item slider__item slider__item--current">
-                <img src="https://via.placeholder.com/311x232" width="311" height="232" alt="Кот до (полненький)">
+              <li class="example__difference-item slider__item slider__item--current js-slide-before">
+                <img src="img/before-mobile@1x.png" width="311" height="232" alt="Кот до (полненький)">
               </li>
-              <li class="example__difference-item slider__item slider__item">
-                <img src="https://via.placeholder.com/251x240" width="251" height="240" alt="Кот после (худенький)">
+              <li class="example__difference-item slider__item slider__item js-slide-after">
+                <img src="img/after-mobile@1x.png" width="251" height="240" alt="Кот после (худенький)">
               </li>
             </ul>
             <div class="example__difference-toggles slider__toggles">
-              <button class="slider__toggle-button" type="button">Было</button>
+              <button class="slider__toggle-button js-button-before" type="button">Было</button>
               <a class="slider__toggle-bar js-scroll" href="blank.html">
                 <div class="slider__toggle-out">
                   <div class="slider__toggle-in slider__toggle-in--before"></div>
                 </div>
               </a>
-              <button class="slider__toggle-button" type="button">Стало</button>
+              <button class="slider__toggle-button js-button-after" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -177,5 +178,7 @@
     </footer>
 
     <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- <script src="js/nav.js"></script> -->
   </body>
 </html>

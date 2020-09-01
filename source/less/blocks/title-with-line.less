@@ -36,6 +36,22 @@
   }
 }
 
+.title-with-line--tablet-form {
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+
+    margin-left: -70px;
+    margin-right: -70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+
+    margin-left: -110px;
+    margin-right: -110px;
+  }
+}
+
 .title-with-line__title {
   font-family: @default-font;
   font-style: normal;
@@ -49,5 +65,12 @@
   background-color: @white;
   padding-right: 24px;
 
-  padding-left: 20px;
+  /* padding-left: 20px; */
+
+  @media (min-width: @tablet-width) {
+    padding-right: 39px;
+    padding-left: 39px;
+
+    margin-left: -39px;
+  }
 }
