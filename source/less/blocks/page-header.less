@@ -71,6 +71,7 @@
     justify-content: space-between;
 
     .set-left-right-padding();
+    padding-top: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,6 +101,11 @@
       background-repeat: no-repeat;
 
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 }
