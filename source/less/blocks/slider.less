@@ -2,7 +2,7 @@
   .clear-lists-style();
 
   margin: 0;
-  /* margin-bottom: 5px; */
+  margin-bottom: 25px;
 }
 
 .slider__toggles {
@@ -13,7 +13,10 @@
 
 .slider__item {
   display: none;
-  height: 232px;
+  /* height: 232px; */
+  /* height: 252px; */
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: @tablet-width) {
     height: 536px;
@@ -68,8 +71,8 @@
 }
 
 .slider__toggle-bar {
-  width: 33%;
-  height: 10px;
+  width: 29%;
+  height: 14px;
 
   margin-right: 14px;
   margin-left: 14px;
@@ -91,7 +94,7 @@
   border: 1px solid @special_grey;
   border-radius: 6px;
 
-  padding: 4px;
+  padding: 6px;
   padding-left: 6px;
   padding-right: 6px;
 
@@ -106,13 +109,13 @@
 .slider__toggle-in {
   position: absolute;
 
-  top: 2px;
+  top: 3px;
 
   background: @basic_green;
   border-radius: 6px;
 
   width: 45%;
-  height: 4px;
+  height: 6px;
 
   @media (min-width: @tablet-width) {
     width: 34px;

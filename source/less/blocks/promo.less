@@ -52,13 +52,13 @@
 
   .set-left-right-padding();
 
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 
-  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
@@ -156,6 +156,8 @@
 
   object-fit: cover;
 
+  margin-bottom: 3px;
+
   @media (min-width: @tablet-width) {
     order: 2;
 
@@ -185,6 +187,9 @@
 
 .promo__find {
   align-self: stretch;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {
     align-self: inherit;
