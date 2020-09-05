@@ -15,6 +15,10 @@
   padding: 0;
   padding-top: 20px;
   padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+  }
 }
 
 .socials__item {
@@ -32,5 +36,35 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.socials__svg-vk {
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 31px;
+    height: 23px;
+  }
+}
+
+.socials__svg-inst {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.socials__svg-fb {
+  width: 22px;
+  height: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 15px;
+    height: 30px;
   }
 }

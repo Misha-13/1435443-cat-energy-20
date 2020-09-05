@@ -19,6 +19,11 @@
 
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    padding-left: 36px;
+  }
+
   a {
     @media (min-width: @tablet-width) {
       font-size: 18px;
@@ -52,7 +57,7 @@
 
 .site-list__item--active a {
   border-bottom: 2px solid @basic_green;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 
   @media (max-width: @mobile-width-only) {
     border-bottom: none;
@@ -67,6 +72,7 @@
   }
 
   border-bottom: 2px solid @basic_green;
+  padding-bottom: 7px;
 
   @media (min-width: @desktop-width) {
     border-bottom: 2px solid @white;
