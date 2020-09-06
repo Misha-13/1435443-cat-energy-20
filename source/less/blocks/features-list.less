@@ -34,7 +34,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 50px;
+    padding-right: 43px;
+    padding-top: 75px;
+    padding-bottom: 58px;
   }
 }
 
@@ -69,7 +71,8 @@
     font-size: 36px;
     line-height: 36px;
 
-    margin-bottom: 73px;
+    /* margin-bottom: 73px; */
+    margin-bottom: 74px;
   }
 
   &::before {
@@ -103,7 +106,9 @@
       width: 100px;
       height: 100px;
 
-      top: -30px;
+      /* top: -30px;
+      left: 0; */
+      top: -29px;
       left: 0;
     }
   }
@@ -147,8 +152,10 @@
       width: 70px;
       height: 97px;
 
-      top: -25px;
-      left: 20px;
+      /* top: -25px;
+      left: 20px; */
+      top: -35px;
+      left: 15px;
     }
   }
 }
@@ -179,8 +186,10 @@
       width: 134px;
       height: 56px;
 
-      top: 0;
-      left: -15px;
+      /* top: 0;
+      left: -15px; */
+      top: -9px;
+      left: -19px;
     }
   }
 }
@@ -223,11 +232,22 @@
 
     font-size: 16px;
     line-height: 24px;
+
+    margin-bottom: 0;
+
+    padding-bottom: 0;
   }
 }
 
 .features-list__description--gain {
-  padding-right: 310px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 5px;
+  }
 }
 
 .features-list__link {
@@ -263,6 +283,11 @@
     @media (min-width: @tablet-width) {
       top: 9px;
       right: -7px;
+    }
+
+    @media (min-width: @desktop-width) {
+      /* top: 9px; */
+      right: -9px;
     }
   }
 

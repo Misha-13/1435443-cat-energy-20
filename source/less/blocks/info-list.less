@@ -63,6 +63,16 @@
       right: 29%;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      right: 2%;
+    }
+
+    &:first-child::after {
+      right: 8%;
+    }
+  }
 }
 
 .info-list__description {
