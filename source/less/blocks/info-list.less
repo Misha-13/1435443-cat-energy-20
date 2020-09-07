@@ -14,8 +14,12 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 150px;
-    grid-row-gap: 30px;
+    /* grid-column-gap: 150px;
+    grid-row-gap: 30px; */
+    grid-column-gap: 60px;
+    grid-row-gap: 37px;
+
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,7 +45,8 @@
       position: absolute;
 
       top: 0;
-      left: 43%;
+      /* left: 43%; */
+      right: 24%;
 
       font-family: @default-font;
       font-style: normal;
@@ -52,6 +57,20 @@
       color: @basic_grey;
 
       z-index: -1;
+    }
+
+    &:first-child::after {
+      right: 29%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      right: 2%;
+    }
+
+    &:first-child::after {
+      right: 8%;
     }
   }
 }
@@ -72,7 +91,8 @@
     line-height: 24px;
 
     padding-left: 0;
-    padding-top: 150px;
+    /* padding-top: 150px; */
+    padding-top: 151px;
   }
 
   &::before {
@@ -91,7 +111,8 @@
       width: 80px;
       height: 80px;
 
-      top: 40px;
+      /* top: 40px; */
+      top: 39px;
     }
 
     background-color: @basic_green;
@@ -103,6 +124,11 @@
 .info-list__description--leaf {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px auto;
+    }
   }
 }
 
@@ -110,16 +136,31 @@
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 50px auto;
+  }
 }
 
 .info-list__description--eat {
   &::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 50px auto;
+  }
 }
 
 .info-list__description--clock {
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 50px auto;
   }
 }

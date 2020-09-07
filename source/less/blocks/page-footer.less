@@ -40,12 +40,19 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 25px;
   }
 }
 
 .page-footer__logo {
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
 
   &:hover {
     opacity: 0.8;
@@ -68,6 +75,10 @@
 }
 
 .page-footer__copyright {
-  padding-top: 22px;
+  padding-top: 17px;
   padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+  }
 }
