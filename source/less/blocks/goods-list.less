@@ -5,14 +5,18 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
+    /* grid-gap: 60px; */
+    grid-column-gap: 60px;
+    grid-row-gap: 55px;
 
     /* .set-left-right-padding(); */
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 80px;
+    /* grid-gap: 80px; */
+    grid-column-gap: 80px;
+    grid-row-gap: 55px;
   }
 }
 
@@ -37,14 +41,16 @@
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 5px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
+    padding-bottom: 38px;
 
     /* margin-bottom: 140px; */
 
     min-height: 510px;
 
     /* background-color: @basic_grey; */
-    background: linear-gradient(transparent 20%, @basic_grey 20%);
+    /* background: linear-gradient(transparent 20%, @basic_grey 20%); */
+    background: linear-gradient(transparent 85px, @basic_grey 85px);
   }
 }
 
@@ -61,7 +67,8 @@
     padding-right: 0;
 
     /* padding-top: 80px; */
-    padding-top: 105px;
+    /* padding-top: 105px; */
+    padding-top: 82px;
     padding-bottom: 0;
 
     outline: none; /* врменно - пока есть обводка */
