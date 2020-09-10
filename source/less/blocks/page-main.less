@@ -1,7 +1,3 @@
-/* .page-main {
-  height: 100%;
-} */
-
 .page-main__title {
   font-family: @default-font;
   font-style: normal;
@@ -16,13 +12,11 @@
   box-sizing: border-box;
 
   margin: 0;
-  /* margin-bottom: 8px; */
   margin-left: auto;
   margin-right: auto;
 
   .set-left-right-padding();
   padding-top: 27px;
-  /* padding-bottom: 41px; */
   padding-bottom: 40px;
 
   border-bottom: 1px solid @special_grey-2;
@@ -31,9 +25,13 @@
     font-size: 60px;
     line-height: 60px;
 
-    margin-bottom: 80px;
+    margin-bottom: 12px;
 
     border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 11px;
   }
 }
 
