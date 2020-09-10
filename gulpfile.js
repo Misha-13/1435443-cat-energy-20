@@ -9,6 +9,9 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
 const sync = require("browser-sync").create();
 
 // Styles
@@ -112,13 +115,35 @@ const html = () => {
   ], {
     base: "source"
   })
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
 }
+
+exports.html = html;
+
+// js
+
+const js = () => {
+  /* return pipeline(
+    gulp.src('lib/*.js'),
+    uglify(),
+    gulp.dest('dist')
+  ); */
+  return gulp.src([
+    "source/js/*.js"
+  ], {
+    base: "source"
+  })
+  .pipe(uglify())
+  .pipe(gulp.dest("build"));
+}
+
+exports.js = js;
 
 // Build
 
 const build = gulp.series(
-  clean, copy, styles, sprite, html
+  clean, copy, styles, sprite, js, html
 )
 
 exports.build = build;
