@@ -1,6 +1,9 @@
 var navigationPane = document.querySelector('.main-nav');
 var navigationButton = document.querySelector('.main-nav__toggle');
 
+if (navigationButton.classList.contains('main-nav--nojs')) {
+  navigationButton.classList.remove('main-nav--nojs');
+}
 
 if (window.innerWidth<768) {
   navigationPane.classList.add('main-nav--closed');

@@ -10,13 +10,29 @@ const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
-var uglify = require("gulp-uglify");
-var pipeline = require("readable-stream").pipeline;
+const uglify = require("gulp-uglify");
 const sync = require("browser-sync").create();
 
 // Styles
 
 const styles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.styles = styles;
+
+// StylesMin
+
+const stylesMin = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -31,7 +47,7 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+exports.stylesMin = stylesMin;
 
 // Server
 
@@ -52,7 +68,8 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/less/**/*.less", gulp.series("styles", "stylesMin"));
+  gulp.watch("source/js/*.js", gulp.series("js"));
   gulp.watch("source/*.html").on("change", gulp.series(html,sync.reload));
 }
 
@@ -124,11 +141,6 @@ exports.html = html;
 // js
 
 const js = () => {
-  /* return pipeline(
-    gulp.src('lib/*.js'),
-    uglify(),
-    gulp.dest('dist')
-  ); */
   return gulp.src([
     "source/js/*.js"
   ], {
@@ -143,7 +155,7 @@ exports.js = js;
 // Build
 
 const build = gulp.series(
-  clean, copy, styles, sprite, js, html
+  clean, copy, styles, stylesMin, sprite, js, html
 )
 
 exports.build = build;

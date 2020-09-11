@@ -2,19 +2,22 @@
   list-style: none;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
   box-sizing: border-box;
-
-  width: 130px;
 
   margin: 0;
 
   padding: 0;
   padding-top: 20px;
   padding-bottom: 17px;
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @gray--dark;
+    border-bottom: 1px solid @gray--dark;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 23px;
@@ -52,6 +55,9 @@
 .socials__svg-inst {
   width: 16px;
   height: 16px;
+
+  margin-left: 31px;
+  margin-right: 36px;
 
   @media (min-width: @tablet-width) {
     width: 23px;
